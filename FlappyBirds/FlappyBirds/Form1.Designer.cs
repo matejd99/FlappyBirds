@@ -28,60 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
+            this.Score = new System.Windows.Forms.Label();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.pipeUp = new System.Windows.Forms.PictureBox();
             this.PipeDown = new System.Windows.Forms.PictureBox();
             this.Bird = new System.Windows.Forms.PictureBox();
             this.Ground = new System.Windows.Forms.PictureBox();
-            this.Score = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pipeUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PipeDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FlappyBirds.Properties.Resources.pipedown;
-            this.pictureBox1.Location = new System.Drawing.Point(338, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 197);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // PipeDown
-            // 
-            this.PipeDown.Image = global::FlappyBirds.Properties.Resources.pipe;
-            this.PipeDown.Location = new System.Drawing.Point(338, 332);
-            this.PipeDown.Name = "PipeDown";
-            this.PipeDown.Size = new System.Drawing.Size(177, 224);
-            this.PipeDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PipeDown.TabIndex = 2;
-            this.PipeDown.TabStop = false;
-            // 
-            // Bird
-            // 
-            this.Bird.Image = global::FlappyBirds.Properties.Resources.bird;
-            this.Bird.Location = new System.Drawing.Point(109, 231);
-            this.Bird.Name = "Bird";
-            this.Bird.Size = new System.Drawing.Size(91, 79);
-            this.Bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Bird.TabIndex = 1;
-            this.Bird.TabStop = false;
-            // 
-            // Ground
-            // 
-            this.Ground.Image = global::FlappyBirds.Properties.Resources.ground;
-            this.Ground.Location = new System.Drawing.Point(-7, 556);
-            this.Ground.Name = "Ground";
-            this.Ground.Size = new System.Drawing.Size(1201, 106);
-            this.Ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Ground.TabIndex = 0;
-            this.Ground.TabStop = false;
             // 
             // Score
             // 
@@ -93,48 +51,71 @@
             this.Score.TabIndex = 5;
             this.Score.Text = "Score:";
             // 
-            // pictureBox2
+            // gameTimer
             // 
-            this.pictureBox2.Image = global::FlappyBirds.Properties.Resources.pipe;
-            this.pictureBox2.Location = new System.Drawing.Point(764, 275);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(177, 281);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.gameTimer.Enabled = true;
+            this.gameTimer.Interval = 20;
+            this.gameTimer.Tick += new System.EventHandler(this.gameTimerEvent);
             // 
-            // pictureBox3
+            // pipeUp
             // 
-            this.pictureBox3.Image = global::FlappyBirds.Properties.Resources.pipedown;
-            this.pictureBox3.Location = new System.Drawing.Point(764, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(177, 147);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.pipeUp.Image = global::FlappyBirds.Properties.Resources.pipedown;
+            this.pipeUp.Location = new System.Drawing.Point(538, -9);
+            this.pipeUp.Name = "pipeUp";
+            this.pipeUp.Size = new System.Drawing.Size(177, 197);
+            this.pipeUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pipeUp.TabIndex = 3;
+            this.pipeUp.TabStop = false;
+            // 
+            // PipeDown
+            // 
+            this.PipeDown.Image = global::FlappyBirds.Properties.Resources.pipe;
+            this.PipeDown.Location = new System.Drawing.Point(756, 343);
+            this.PipeDown.Name = "PipeDown";
+            this.PipeDown.Size = new System.Drawing.Size(177, 224);
+            this.PipeDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PipeDown.TabIndex = 2;
+            this.PipeDown.TabStop = false;
+            // 
+            // Bird
+            // 
+            this.Bird.Image = global::FlappyBirds.Properties.Resources.bird;
+            this.Bird.Location = new System.Drawing.Point(109, 224);
+            this.Bird.Name = "Bird";
+            this.Bird.Size = new System.Drawing.Size(91, 79);
+            this.Bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Bird.TabIndex = 1;
+            this.Bird.TabStop = false;
+            // 
+            // Ground
+            // 
+            this.Ground.Image = global::FlappyBirds.Properties.Resources.ground;
+            this.Ground.Location = new System.Drawing.Point(-7, 564);
+            this.Ground.Name = "Ground";
+            this.Ground.Size = new System.Drawing.Size(1201, 98);
+            this.Ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ground.TabIndex = 0;
+            this.Ground.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(1065, 645);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(781, 645);
             this.Controls.Add(this.Score);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pipeUp);
             this.Controls.Add(this.PipeDown);
             this.Controls.Add(this.Bird);
             this.Controls.Add(this.Ground);
             this.Name = "Form1";
-            this.Text = "]";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = " ";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gameKeyIsDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gameKeyIsUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pipeUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PipeDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bird)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,10 +126,9 @@
         private System.Windows.Forms.PictureBox Ground;
         private System.Windows.Forms.PictureBox Bird;
         private System.Windows.Forms.PictureBox PipeDown;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pipeUp;
         private System.Windows.Forms.Label Score;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Timer gameTimer;
     }
 }
 

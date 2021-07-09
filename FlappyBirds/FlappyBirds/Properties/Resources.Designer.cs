@@ -73,6 +73,26 @@ namespace FlappyBirds.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cloud {
+            get {
+                object obj = ResourceManager.GetObject("cloud", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ground {
             get {
                 object obj = ResourceManager.GetObject("ground", resourceCulture);
@@ -96,6 +116,16 @@ namespace FlappyBirds.Properties {
         internal static System.Drawing.Bitmap pipedown {
             get {
                 object obj = ResourceManager.GetObject("pipedown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PNGPIX_COM_Volkswagen_Golf_GTI_Cabriolet_Car_PNG_Image {
+            get {
+                object obj = ResourceManager.GetObject("PNGPIX-COM-Volkswagen-Golf-GTI-Cabriolet-Car-PNG-Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

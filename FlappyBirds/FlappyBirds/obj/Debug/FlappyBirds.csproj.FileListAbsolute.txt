@@ -26,3 +26,6 @@ C:\Users\Dragon\Desktop\proektiFaks\FlappyBirds\FlappyBirds\FlappyBirds\FlappyBi
 C:\Users\Dragon\Desktop\proektiFaks\FlappyBirds\FlappyBirds\FlappyBirds\FlappyBirds\obj\Debug\FlappyBirds.csproj.CopyComplete
 C:\Users\Dragon\Desktop\proektiFaks\FlappyBirds\FlappyBirds\FlappyBirds\FlappyBirds\obj\Debug\FlappyBirds.exe
 C:\Users\Dragon\Desktop\proektiFaks\FlappyBirds\FlappyBirds\FlappyBirds\FlappyBirds\obj\Debug\FlappyBirds.pdb
+C:\Users\Dragon\Desktop\proektiFaks\FlappyBirds\FlappyBirds\FlappyBirds\FlappyBirds\obj\Debug\FlappyBirds.Form2.resources
+C:\Users\Dragon\Desktop\proektiFaks\FlappyBirds\FlappyBirds\FlappyBirds\FlappyBirds\obj\Debug\FlappyBirds.Controls.resources
+C:\Users\Dragon\Desktop\proektiFaks\FlappyBirds\FlappyBirds\FlappyBirds\FlappyBirds\obj\Debug\FlappyBirds.ScoreBoard.resources
