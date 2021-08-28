@@ -12,6 +12,8 @@ namespace FlappyBirds
 {
     public partial class Form2 : Form
     {
+        private string PlayerName = "John Doe";
+
         public Form2()
         {
             InitializeComponent();
@@ -20,6 +22,7 @@ namespace FlappyBirds
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
+            f1.SetPlayerName(PlayerName);
             f1.Show();
         }
 
@@ -38,6 +41,12 @@ namespace FlappyBirds
         {
             ScoreBoard f4 = new ScoreBoard();
             f4.Show();
+            f4.SetScores();
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            PlayerName = textBox1.Text;
         }
     }
 }

@@ -17,5 +17,20 @@ namespace FlappyBirds
             InitializeComponent();
         }
 
+        public void SetScores()
+        {
+            var items = ScoreUtils.ReadTopScores()
+                .Select(item => new ListViewItem(item.ToString()))
+                .ToArray();
+            
+            listView1.Items.AddRange(items);
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

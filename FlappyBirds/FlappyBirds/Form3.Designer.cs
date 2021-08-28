@@ -103,7 +103,7 @@
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(43, 241);
+            this.button1.Location = new System.Drawing.Point(43, 257);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 48);
             this.button1.TabIndex = 6;
@@ -116,7 +116,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(248, 331);
+            this.ClientSize = new System.Drawing.Size(248, 357);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

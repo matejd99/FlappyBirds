@@ -16,6 +16,8 @@ namespace FlappyBirds
         int gravity = 8;
         int score = 0;
 
+        public string PlayerName { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -47,9 +49,15 @@ namespace FlappyBirds
 
         }
 
+        internal void SetPlayerName(string playerName)
+        {
+            PlayerName = playerName;
+        }
+
         private void endGame()
         {
             gameTimer.Stop();
+            ScoreUtils.WriteScore(new PlayerScore { Score= score, Name = PlayerName});
             Score.Text = "Game Over! Your score is: " + score;
             this.Close();
         }

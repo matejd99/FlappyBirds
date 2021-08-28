@@ -45,7 +45,7 @@
             // 
             this.Score.AutoSize = true;
             this.Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Score.Location = new System.Drawing.Point(27, 23);
+            this.Score.Location = new System.Drawing.Point(573, 603);
             this.Score.Name = "Score";
             this.Score.Size = new System.Drawing.Size(105, 33);
             this.Score.TabIndex = 5;
